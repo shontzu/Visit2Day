@@ -1,0 +1,98 @@
+<!DOCTYPE html> 
+<html lang="en-US"> 
+	<head>
+		<Visit2Day: Liverpool Home Page</title>
+		<link rel="stylesheet" href="design.css"/>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+	</head>
+	
+	<body style="margin:0">
+		<!--header. Fixed in all pages-->
+		<header>
+			<div class="threeColumn">
+				</br><img src = "resources/Visit2Day-logo.png" height="50%" width="50%">
+			</div>
+			<div class="threeColumn">
+				<h1>Visiting Liverpool?</h1>
+				<span style="color:white">HERE'S A QUICK GUIDE TO HELP YOU<span>
+			</div>
+			<div class="threeColumn">
+			</div>
+		</header>
+		
+		<table>
+			<tr> 
+				<td class="shopping"><a href="CategoryShopping.html">Shopping Malls</a></td>
+				<td class="eating"><a href="CategoryEating.html">Eating Out</a></td>
+				<td class="historical"><a href="CategoryHistorical.html">Historical Sites</a></td>
+			</tr>
+			<tr> 
+				<td class="entertainment"><a href="CategoryEntertainment.html">Entertainment</a></td>
+				<td class="attraction"><a href="CategoryAttraction.html">Tourist's Attraction</a></td>
+				<td class="nightlife"><a href="CategoryNightlife.html">Night Life</a></td>
+			</tr>
+		</table>
+		</div>
+		
+		</br></br></br>
+		
+		<section class="orange">
+			<div>
+				</br>
+					From being one the most stunning city to housing the tallest fine dining restaurants in the UK,
+					Liverpool is a place you must stop by for a visit. There's just so much going on. Not to mention,
+					Liverpool's night life is some of the liveliest and was once voted the fourth hippest place in UK.
+					Liverpool does have some very stunning buildings that's worth your visit. And if you're a fan of football,
+					Liverpool and Everton clubs are from here too. 
+				</br></br>
+					This doesnt beat the main reason you should visit Liverpool -Scousers! (That means Liverpool people~)
+					Scousers are overwhelmingly friendly and inviting and are known to be very generous with giving tourists
+					assistance. You won't be lost in Liverpool!
+			</div>
+		</section>
+		
+		</br></br></br>
+		
+		<section>
+			<div class="oneColumn">
+				</br>
+				<img class="Slideshow" src="resources/Yukti4.jpg" Height="400vh">
+				<img class="Slideshow" src="resources/RoyalLiver.jpg" Height="400vh">
+				<img class="Slideshow" src="resources/group of people in front of stage Photo by Aditya Chinchure on Unsplash.jpg" Height="400vh">
+				<img class="Slideshow" src="resources/RLB visitliverpool.jpg" Height="400vh"></br>
+				<button onclick="move(-1)" class="button">prev</button> <!-- call the function MOVE(n) in script and assign n as -1 -->
+				<button onclick="move(+1)" class="button">next</button> <!-- call the function MOVE(n) in script and assign n as +1 -->
+			</div>
+			</br></br></br>
+		</section>
+		
+		<!--footer. Fixed in all pages-->
+		<footer>
+			Keoy Shon Tzu | LJMU ID: 897147 | YPC ID: BMC1904254 
+		</footer>
+	</body>
+	
+	<script>
+		var slideIndex = 1;
+		show(slideIndex);
+
+		function move(n) {
+		  show(slideIndex += n);
+		}
+
+		function show(n) {
+		  var i;
+		  var x = document.getElementsByClassName("Slideshow");
+			if (n > x.length) {
+				slideIndex = 1
+			}
+			if (n < 1) {
+				slideIndex = x.length
+			}
+		  for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";
+		  }
+		  x[slideIndex-1].style.display = "inline";
+		}
+	</script>
+</html>

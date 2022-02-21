@@ -1,0 +1,198 @@
+/* 
+font-family: 'Work Sans', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+*/
+
+body {
+	margin-top:0; margin-bottom:0; margin-right:0;
+	margin-left:19.9999999%; /*same as sidenav width minus the border width*/
+	line-height: 25px;
+	background-image:url("resources/yellowMarble.jpg");
+	font-family: 'Work Sans', sans-serif;
+}
+/* END GLOBAL*/
+
+/*SIDE PANE*/
+ul {
+	margin:0;
+	padding:0;
+}
+
+li {
+	display:block;
+}
+
+a {
+	text-decoration:none;
+	color:#FFD68A;
+}
+
+.sidenav {
+  height: 100vh; /* occupy 100% of the vertical height */
+  width: 20%; /* as wide as the sidebar */
+  position: fixed; /* Fixed Sidebar on scroll */
+  left: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  border: 0.5pt solid gray;
+}
+ 
+.sidenav a { /*hover effect for sidenav is merged under TABLE category*/
+	text-decoration: none;
+	font-size: 25px;
+	color:#754C00;
+	display: block;
+	padding:13%;
+}
+/*END SIDE PANE*/
+
+/*HEADER*/
+header, footer {
+	background-image:url("resources/orangeMarble.jpg");
+	border-bottom:5px solid brown;
+	color:white;
+	padding:1% 5%;
+	opacity: 1;
+	font-family: 'Roboto Condensed', sans-serif;
+	text-align:center;
+}
+
+header:hover, footer:hover {
+	opacity: 0.8;
+}
+/*END HEADER*/
+
+/*CONTAINER*/
+h1{
+	font-size:45px;
+}
+.orange {
+	background-color: #FFD68A;
+	text-align:center;
+}
+
+section {
+	color:black;
+	text-align: center;
+	padding: 0% 5%;
+	}
+
+div {
+	margin: 0;
+	display: inline-block; 
+}
+
+.oneColumn { /* format for sections with one column (one divs)*/
+	text-align:center;
+	margin: none;
+	width: 80%;
+	padding: none;
+}
+
+.twoColumn { /* format for sections with two columns (two divs)*/
+	width: 49%;
+	display: inline-block;
+}
+
+.threeColumn { /* format for sections with three columns (three divs)*/
+	width: 30%;
+	height: 30%;
+	display: inline-block;
+}
+/*END CONTAINER*/
+
+/*TABLE @ HOMEPAGE*/
+table {
+	width:100%; 
+	height:75vh; 
+	color:black;
+	opacity:0.8;
+	text-align:center;
+	font-size:40px;
+}
+
+
+td:hover, li:hover {
+	background-color: white;
+	opacity:0.6;
+}
+/*END TABLE*/
+
+/*CUSTOMIZE BACKGROUND*/
+.shopping {
+	background-image:url("resources/People inside mall Photo by Marcin Kempa on Unsplash.jpg");
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover;
+	background-attachment: fixed;
+}
+.eating {
+	background-image:url("resources/top view photo of pepperoni pizza beside brown cup filled with yellow liquid and ice cubes Photo by Thomas Tucker on Unsplash.jpg");
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover;
+	background-attachment: fixed;
+}
+.historical {
+	background-image:url("resources/history.jpg");
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover;
+	background-attachment: fixed;
+}
+.entertainment {
+	background-image:url("resources/high angle photo of assorted-color plastic balls Photo by Greyson Joralemon on Unsplash.jpg");
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover;
+	background-attachment: fixed;
+}
+.attraction {
+	background-image:url("resources/attraction.jpg");
+	background-position: top; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover;
+	background-attachment: fixed;
+}
+.nightlife {
+	background-image:url("resources/group of people in front of stage Photo by Aditya Chinchure on Unsplash.jpg");
+	background-position: right; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.odd {
+	background-color:#FFC55C;
+	border:1px solid black;
+}
+
+.even {
+	background-color:#FFD68A;
+	border-left:1px solid black;
+	border-right:1px solid black;
+}
+/* END CUSTOMIZE BACKGROUND */
+
+/*CUSTOMIZE BUTTONS*/
+.button {
+	background-color:#F7882F;
+    height: 10%;
+    outline: none;
+    padding: 0;
+    width: 10%;
+}
+
+button:hover {
+	background-color:#DCC7AA;
+}
+/*END CUSTOMIZING BUTTONS*/
+
+/*NIGHT LIFE PAGE SHOW AND HIDE CONTENT*/
+.hide {
+	display: none;
+}
+
+.current{
+		color: orange;
+}
+/*END SHOW AND HIDE CONTENT*/

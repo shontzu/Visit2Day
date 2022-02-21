@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- JSExEvent.html -->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="design.css"/>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+	<title>Age verification</title>
+	<script>
+		function proceed() {
+		  open("HomePage.html");
+		  close("index.html");
+		}
+		function exit() {
+		  close("index.html");
+		}
+	</script>
+</head>
+
+<body style="margin-right:20%">
+		<!--header. Fixed in all pages-->
+		<header>
+			<div class="threeColumn">
+				</br><img src = "resources/Visit2Day-logo.png" height="50%" width="50%">
+			</div>
+			<div class="threeColumn">
+				<h1>Hold up...</h1>
+			</div>
+			<div class="threeColumn">
+			</div>
+		</header>
+	<h3 class="orange">
+		You're about to proceed to a page designed to target the age 20 to 40 niche
+	</h3>
+	<p>
+		Some of our reccomendations might be irrelevant if you're not in this age group</br>
+		Are you sure you want to proceed?
+	</p>
+	<input type="button" value="I want to proceed"
+         onclick="proceed()">
+	<input type="button" value="Leave this page"
+         onclick="exit()">
+</body>
+</html>
